@@ -1,4 +1,5 @@
-html {
+body {
+    margin: 0px;
     --primary-color: #E0F8E8;
     --text-color: #011627;
     --component-color: #E71D36;
@@ -7,36 +8,136 @@ html {
     --shadow-color: rgba(0, 0, 0, 0.25);
     --title-size: 2rem;
     --subheading-size: 1.125rem;
-    --text-size: 1rem;
+    --text-size: 1.25rem;
     background-color: var(--primary-color);
     color: var(--text-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo {
+    padding-left: 5rem;
     flex: 0.5;
-    max-width: 16rem;
-    max-height: 16rem;
+    max-width: 14rem;
+    max-height: 14rem;
     border-radius: 0.25rem;
 }
 
 .header {
+    background-color: var(--accent-color);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     height: 16rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--component-color);
 }
 
-.navbar {
+.userNavbar {
     flex: 0.5;
-    width: 32rem;
 }
 
-.navbar > a {
-    background-color: var(--component-color);
+.navbar, .userNavbar {
+    margin: 0px;
+    height: 100%;
+    width: 48rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.userNavbar {
+    align-items: center;
+}
+
+.sitenav {
+    padding-top: 1rem;
+    height: 2.25rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    flex: 0.5;
+    background-color: var(--accent-color);
+    border-bottom: 1px solid var(--shadow-color);
+    margin-bottom: 1rem;
+}
+
+a {
+    font-weight: bold;
+    min-width: 7.5rem;
+    text-align: center;
+    background-color: var(--active-color);
+    font-size: var(--text-size);
+    text-decoration: none;
+    color: var(--text-color);
     padding: 0.375rem;
     box-shadow: 0.25rem 0.25rem 0.25rem var(--shadow-color);
     border-radius: 0.25rem;
+
+}
+
+a:hover {
+    position: relative;
+    top: 1.5px;
+    left: 1.5px;
+    filter: brightness(0.8);
+    box-shadow: 0.3rem 0.3rem 0.3rem var(--shadow-color);
+
+}
+
+.footer {
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-name {
+    font-size: var(--subheading-size);
+
+}
+
+.left > a, .right > a {
+    background-color: transparent;
+    font-weight: normal;
+    box-shadow: none;
+}
+
+.left {
+    width: 25%;
+    padding-left: 1rem;
+}
+
+.right {
+    width: 6%;
+    padding-right: 1rem;
+}
+
+.right, .left {    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#instaicon, #twittericon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#instaicon:hover, #twittericon:hover {
+    position: relative;
+    top: 1.5px;
+    left: 1.5px;
+}
+
+.maincontent {
+    padding: 4rem 10rem 1rem 10rem;
+    justify-content: center;
+    font-size: var(--text-size);
 }
