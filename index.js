@@ -2,7 +2,7 @@ $ = (id) => document.getElementById(id);
 
 let logo = $('logo');
 logo.onclick = function () {
-    open('/', 'index.html')
+    window.location.pathname = '/index.' + window.location.pathname.split('.')[1]
 }
 
 let twitterIcon = $('twittericon');

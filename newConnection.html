@@ -9,6 +9,7 @@
   <meta name="author" content="Luke Garceau">
   <link rel="icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="connections.css">
   <link rel="stylesheet" href="newConnection.css">
 
 </head>
@@ -28,6 +29,32 @@
           <a href="connections.html">Connections</a>
           <a href="connection.html">Connection</a>
       </nav>
+    </div>
+    <p class="connection">New Event</p>
+    <div class="maincontent">
+      <form class="newconnectionform">
+        <label for="tournamentName">Event Title</label>
+        <input type="text" placeholder="Title" name="tournamentName"/>
+        <label for="tournamentType">Tournament Type</label>
+        <select type="text" name="tournamentType">
+          <option value="1v1">1v1</option>
+          <option value="1v1v1">1v1v1</option>
+          <option value="1v1v1v1">1v1v1v1</option>
+          <option value="2v2">2v2</option>
+          <option value="3v3">3v3</option>
+          <option value="4v4">4v4</option>
+        </select>
+        <label for="tournamentDate">Date</label>
+        <input type="date" for="tournamentDate"/>
+        <label for="tournamentStart">Start Time</label>
+        <input type="time" name="tournamentStart"/>
+        <label for="tournamentEnd">End Time</label>
+        <input type="time" name="tournamentEnd"/>
+        <label for="tournamentCommunication">Disocrd Link</label>
+        <input type="text" name="tournamentCommunication" placeholder="discord.gg/ACBDEF"/>
+        <div></div>
+        <p id="submit">Submit</a>
+      </form>
     </div>
     <footer class="footer">
       <div class="left">

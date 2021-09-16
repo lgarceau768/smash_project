@@ -1,0 +1,34 @@
+.connection {
+    font-size: var(--subheading-size) + 2rem;
+    font-weight: bold;
+}
+
+.connectionInfo {
+    cursor: default;
+    margin-left: 3rem;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: normal;
+    font-size: var(--text-size);
+    padding-left: 0px;
+}
+
+.maincontent {    
+    height: 100%;
+}
+
+.maincontent > a {
+    text-decoration: underline;
+}
+
+.connectionInfo:hover {
+    cursor: pointer;
+    box-shadow: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+p {
+    cursor: default;
+}
